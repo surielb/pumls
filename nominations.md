@@ -34,6 +34,8 @@ A nomination holder holds the votes made by team members for each item. it is th
 Each team member gets to "vote" who they wish to "award" a nomination to. the list of available entrees would be the other team members.
 and the end of the challenge a user with the most votes would be "awarded" the nomination
 
+<img src="basic_vote.png" alt="drawing" width="200"/>
+
 
 ### `NominationAward`
 
