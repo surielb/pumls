@@ -37,7 +37,7 @@ and the end of the challenge a user with the most votes would be "awarded" the n
 
 ### `NominationAward`
 
-When the challenge has completed, "awrads" are given to the team members based on the votes they recieved.
+When the challenge has completed, "awards" are given to the team members based on the votes they recieved.
 In addition to their award being presented in the challenge's result it will be added to the users profile.
 An award is added to a user's `NominationAward` for that `NominationItem`
 
