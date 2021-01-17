@@ -1,0 +1,50 @@
+
+@startuml
+
+class NominationItem {
+String key
+String title
+String description
+Image image
+List<Tag> tags
+}
+
+class Nominations {
+String key
+String title
+String description
+Image image
+List<NominationItem> items
+}
+
+class NominationVote{
+  Date voted_at
+  User voted
+  User voted_by
+}
+class Nomination{
+  NominationItem item
+  List<NominationVote> votes
+}
+
+class NominationsChallengeItem{
+  List<Nomination> nominations
+}
+
+class NominationAward{
+  User user
+  List<Nomination> nominations
+}
+class User{
+List<NominationAward> awards
+}
+
+Nominations  *--> "many" NominationItem
+Nomination --> "item" NominationItem
+Nomination *--> "votes" NominationVote
+NominationsChallengeItem *--> "nominations" Nomination
+NominationAward *-up-> "nominations" Nomination
+User *--> "Awards" NominationAward
+Nominations .. NominationsChallengeItem
+
+@enduml
